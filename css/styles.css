@@ -16,7 +16,7 @@ body {
 
 /* PDF Frame Style */
 embed {
-	width: 100% 
+	width: 100%;
 	height: 800px;
 }
 
@@ -31,7 +31,7 @@ embed {
 header {
 	background: #333;
 	color: #fff;
-	passing: 20px 0;
+	padding: 20px 0;
 	text-align: center;
 }
 
