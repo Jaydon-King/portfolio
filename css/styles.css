@@ -14,6 +14,35 @@ body {
 	background-color: #f4f4f4;
 }
 
+/* Center the entire main content */
+main {
+    text-align: center;
+}
+
+/* Remove default list styling and ensure the list is centered */
+main ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+}
+
+/* Display the list items inline and add spacing between them */
+main ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+/* Remove the margin on the last list item */
+main ul li:last-child {
+    margin-right: 0;
+}
+
+/* Optional: Adjust image size */
+main ul li img {
+    width: 50px;
+    height: 50px;
+}
+
 .pdf-containter {
 	text-align: center;
 	overflow:hidden;
@@ -28,11 +57,25 @@ embed {
 	display: block;
 }
 
+/* Style for smaller screens and phone */
 @media (max-width: 600px) {
 	embed {
 		height: 400px;
 	}
 }
+
+/* Profile Image */
+        .profile-image {
+            display: block;
+            margin: 0 auto 30px;
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            transform: translateY(0);
+            transition: transform var(--transition-speed);
+        }
 /* Center content */
 .container {
 	width: 80%;
