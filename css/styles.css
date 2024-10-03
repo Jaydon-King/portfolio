@@ -14,14 +14,25 @@ body {
 	background-color: #f4f4f4;
 }
 
+.pdf-containter {
+	text-align: center;
+	overflow:hidden;
+}
+
 /* PDF Frame Style */
 embed {
 	width: 50%;
+	max width: 800px;
 	height: 900px;
 	margin:0 auto;
 	display: block;
 }
 
+@media (max-width: 600px) {
+	embed {
+		height: 400px;
+	}
+}
 /* Center content */
 .container {
 	width: 80%;
